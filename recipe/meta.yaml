@@ -1,6 +1,6 @@
 {% set name = "synced_collections" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "b770a99c8455cb00dce4645525f8092f4ec15a9d028276777f266f9652f6b8f5" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "1790eac64c95e851d0d9729146a3a14e0b8fc4ad5489df8672f74836b562ffe7" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
